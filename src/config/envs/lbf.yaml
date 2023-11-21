@@ -1,0 +1,6 @@
+env: "gymma"
+
+env_args:
+  key: "lbforaging:Foraging-8x8-2p-3f-v1"
+  time_limit: 25
+  pretrained_wrapper: null

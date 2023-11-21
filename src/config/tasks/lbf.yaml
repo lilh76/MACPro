@@ -1,0 +1,32 @@
+env: "lbf"
+train_tasks: [
+  "lbforaging:Foraging-5x5-2p-1f-coop-topright-v1",
+  "lbforaging:Foraging-5x5-2p-1f-coop-right-v1",
+  "lbforaging:Foraging-5x5-2p-1f-coop-bottomright-v1",
+  "lbforaging:Foraging-5x5-2p-1f-coop-bottom-v1",
+  "lbforaging:Foraging-5x5-2p-1f-coop-bottomleft-v1",
+
+  # # generalization test
+  # "lbforaging:Foraging-5x5-2p-1f-coop-right1-v1",
+  # "lbforaging:Foraging-5x5-2p-1f-coop-right2-v1",
+  # "lbforaging:Foraging-5x5-2p-1f-coop-right3-v1",
+  # "lbforaging:Foraging-5x5-2p-1f-coop-right4-v1",
+  # "lbforaging:Foraging-5x5-2p-1f-coop-right5-v1",
+  # "lbforaging:Foraging-5x5-2p-1f-coop-bottom1-v1",
+  # "lbforaging:Foraging-5x5-2p-1f-coop-bottom3-v1",
+  # "lbforaging:Foraging-5x5-2p-1f-coop-bottom4-v1",
+  # "lbforaging:Foraging-5x5-2p-1f-coop-bottom5-v1",
+  # "lbforaging:Foraging-6x6-2p-1f-coop-topright-v1",
+  # "lbforaging:Foraging-6x6-2p-1f-coop-topright3-v1",
+  # "lbforaging:Foraging-6x6-2p-1f-coop-right1-v1",
+  # "lbforaging:Foraging-6x6-2p-1f-coop-right-v1",
+  # "lbforaging:Foraging-6x6-2p-1f-coop-right5-v1",
+  # "lbforaging:Foraging-6x6-2p-1f-coop-bottomright-v1",
+  # "lbforaging:Foraging-6x6-2p-1f-coop-bottom1-v1",
+  # "lbforaging:Foraging-6x6-2p-1f-coop-bottom-v1",
+  # "lbforaging:Foraging-6x6-2p-1f-coop-bottom5-v1",
+  # "lbforaging:Foraging-6x6-2p-1f-coop-bottomleft1-v1",
+  # "lbforaging:Foraging-6x6-2p-1f-coop-bottomleft-v1",
+]
+t_max: -1
+change_task_interval: 400000

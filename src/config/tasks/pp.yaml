@@ -1,0 +1,31 @@
+env: "gymma"
+train_tasks: [
+  "mpe:SimpleTag-heuristic-v0",
+  "mpe:SimpleTag-fix-frozen-v0",
+  "mpe:SimpleTag-bull-bull-v0",
+  "mpe:SimpleTag-flash-random-v0",
+  
+  # # generalization test
+  # "mpe:SimpleTag-heuristic1-v0",
+  # "mpe:SimpleTag-fix-frozen1-v0",
+  # "mpe:SimpleTag-bull-bull1-v0",
+  # "mpe:SimpleTag-flash-random1-v0",
+  # "mpe:SimpleTag-heuristic2-v0",
+  # "mpe:SimpleTag-fix-frozen2-v0",
+  # "mpe:SimpleTag-bull-bull2-v0",
+  # "mpe:SimpleTag-flash-random2-v0",
+  # "mpe:SimpleTag-heuristic3-v0",
+  # "mpe:SimpleTag-fix-frozen3-v0",
+  # "mpe:SimpleTag-bull-bull3-v0",
+  # "mpe:SimpleTag-flash-random3-v0",
+  # "mpe:SimpleTag-heuristic4-v0",
+  # "mpe:SimpleTag-fix-frozen4-v0",
+  # "mpe:SimpleTag-bull-bull4-v0",
+  # "mpe:SimpleTag-flash-random4-v0",
+  # "mpe:SimpleTag-heuristic5-v0",
+  # "mpe:SimpleTag-fix-frozen5-v0",
+  # "mpe:SimpleTag-bull-bull5-v0",
+  # "mpe:SimpleTag-flash-random5-v0",
+]
+t_max: -1
+change_task_interval: 500000

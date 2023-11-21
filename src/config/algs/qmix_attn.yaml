@@ -1,0 +1,57 @@
+# --- QMIX specific parameters ---
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 50000
+
+runner: "episode"
+
+buffer_size: 5000
+
+# update the target network every {} episodes
+target_update_interval: 200
+
+# use the Q_Learner to train
+agent_output_type: "q"
+learner: "q_learner"
+double_q: True
+mixer: "qmix"
+mixing_embed_dim: 32
+hypernet_layers: 2
+hypernet_embed: 64
+
+# --- MACPro specific parameters ---
+
+runner: "episode_macpro"
+mac: "basic_mac_macpro_attn"
+learner: "q_learner_macpro_attn"
+agent: "attn"
+
+# params about observation decomposition
+id_length: 4
+entity_embed_dim: 64
+attn_embed_dim: 8
+max_agent: 10
+
+# reg parameters
+reg: False
+reg_coef: 0
+reset_head: False
+reset_epsilon: False
+
+# probing parameters
+z_dim: 32
+probe_nepisode: 0
+probing_buffer_size: 0
+enc_heads: 3
+enc_depth: 6
+rec_coef: 0
+contrastive_coef_global: 0
+contrastive_coef_individual: 0
+approx_coef: 0
+update_probing_interval: 0
+save_head_interval: 0
+
+name: "qmix_attn"

@@ -1,0 +1,31 @@
+env: "sc2"
+train_tasks: [
+  "5m_vs_6m", 
+  "13m", 
+  "4m", 
+  "8m_vs_9m", 
+  
+  # # generalization test
+  # "5m_vs_6m_change", 
+  # "13m_change", 
+  # "4m_change", 
+  # "8m_vs_9m_change",
+  # "3m",
+  # "5m",
+  # "6m",
+  # "7m",
+  # "8m",
+  # "9m",
+  # "10m",
+  # "11m",
+  # "12m",
+  # "4m_vs_5m",
+  # "6m_vs_7m",
+  # "7m_vs_8m",
+  # "9m_vs_10m",
+  # "10m_vs_11m",
+  # "11m_vs_12m",
+  # "12m_vs_13m",
+]
+t_max: -1
+change_task_interval: 500000

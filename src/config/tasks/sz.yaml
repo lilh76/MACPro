@@ -1,0 +1,31 @@
+env: "sc2"
+train_tasks: [
+  "2s1z_vs_3z",
+  "2s3z", 
+  "3s5z", 
+  "2s2z_vs_4s", 
+
+  # # generalization test
+  # "2s1z_vs_3z_change",
+  # "2s3z_change", 
+  # "3s5z_change", 
+  # "2s2z_vs_4s_change", 
+  # "1s1z",
+  # "1s2z",
+  # "1s3z",
+  # "2s1z",
+  # "2s2z",
+  # "2s4z",
+  # "3s1z",
+  # "3s2z",
+  # "3s3z",
+  # "3s4z",
+  # "4s2z",
+  # "4s3z",
+  # "4s4z",
+  # "2s2z_vs_4z",
+  # "3s3z_vs_6s",
+  # "4s4z_vs_8z",
+]
+t_max: -1
+change_task_interval: 500000
