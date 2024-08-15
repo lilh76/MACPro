@@ -2,3 +2,4 @@ tb_logs/
 results/
 old_results/
 figure_data/
+.DS_Store
