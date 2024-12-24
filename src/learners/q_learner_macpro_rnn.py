@@ -212,7 +212,7 @@ class QLearnerMACProRNN:
             radius = th.sqrt(th.sum((mu - center) ** 2, dim = -1)).mean()
             self.mac.task2radius[task] = radius
             global_z_dict[task] = traj_z
-            global_mu_lgvar_dict[task] = mu_lgvar
+            global_mu_lgvar_dict[task] = mu_lgvar # [bs, z_dim]
 
             if self.args.rec_coef > 0:
                 model_target = th.cat((state[:,1: ,:] - state[:,:-1,:], obs[:,1: ,:], reward), dim = -1)
@@ -249,7 +249,7 @@ class QLearnerMACProRNN:
             for i, mu_lgvar in enumerate(lst):
                 task_id = (th.ones(bs,1) * i).to(self.args.device)
                 mu_lgvar = th.cat((task_id, mu_lgvar), dim = -1)
-                lst[i] = mu_lgvar
+                lst[i] = mu_lgvar # [bs, z_dim]
             mu_lgvar = th.cat(lst)
             random_idx = random.sample([i for i in range(mu_lgvar.shape[0])], bs)
             sampled_mu_lgvar = mu_lgvar[random_idx]

@@ -55,3 +55,16 @@ Run Finetuning on Marines benchmark:
 ```
 python src/main.py --config=qmix_attn --task-config=marines
 ```
+
+## Publication
+
+If you find this repository useful, please [cite our paper](https://ieeexplore.ieee.org/document/10562331):
+
+```
+@article{macpro,
+  title   = {Multi-agent Continual Coordination via Progressive Task Contextualization},
+  author  = {Lei Yuan and Lihe Li and Ziqian Zhang and Fuxiang Zhang and Cong Guan and Yang Yu},
+  journal = {IEEE Transactions on Neural Networks and Learning Systems},
+  year    = {2024}
+}
+```
